@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://vercel.com/</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+<style>
+ :root {
+    --develop-start-gradient: #007cf0;
+    --develop-end-gradient: #00dfd8;
+ }  
+ .hero_title__H3hra {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 5rem;
+    line-height: 1.3;
+    font-weight: 800;
+    letter-spacing:1px; 
+    font-family: 'Fugaz One', cursive;   
+} 
+.animate-text_bg {
+    position: relative;
+    display: block;
+    -webkit-user-select: none;
+    user-select: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}    
+.animate-text_front {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;      
+    position: relative;
+    z-index: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.animate-text_front-1 {
+    background-image: linear-gradient(90deg,#007cf0, #00dfd8);
+}    
+.animate-text_front-2 {
+    background-image: linear-gradient(90deg,#7928ca, #ff0080);
+}
+.animate-text_front-3 {
+    background-image: linear-gradient(90deg,#ff4d4d, #f9cb28);
+}
+
+.animate-text_bg:before {    
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;    
+    background: linear-gradient(180deg,rgba(0,0,0,.8),#000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0; 
+}
+.animate-text_bg-1:before {
+    content: 'Develop.';
+}
+.animate-text_bg-2:before {
+    content: 'Preview.';
+}
+.animate-text_bg-3:before {
+    content: 'Ship.';
+}
+
+.animate-text_front-1 {
+    animation: animated-gradient-text_fade-foreground-1__3rW7l 8s infinite;
+}
+.animate-text_bg-1:before {
+    animation: animated-gradient-text_fade-background-1__EGNch 8s infinite;
+}
+.animate-text_bg-2:before {
+    animation: animated-gradient-text_fade-background-2__MZFRk 8s infinite;
+}
+.animate-text_front-2 {
+    animation: animated-gradient-text_fade-foreground-2__P9mAq 8s infinite;
+}
+.animate-text_bg-3:before {
+    animation: animated-gradient-text_fade-background-3__VVOJd 8s infinite;
+}
+.animate-text_front-3 {
+  animation: animated-gradient-text_fade-foreground-3__eTWJh 8s infinite;
+}
+
+@keyframes animated-gradient-text_fade-foreground-1__3rW7l {
+    0%, 16.667%, 100% {
+        opacity: 1;
+    }
+
+    33.333%, 83.333% {
+        opacity: 0;
+    }
+}
+
+@keyframes animated-gradient-text_fade-background-1__EGNch {
+    0%, 16.667%, 100% {
+        opacity: 0;
+    }
+
+    25%, 91.667% {
+        opacity: 1;
+    }
+}
+
+@keyframes animated-gradient-text_fade-background-2__MZFRk {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    33.333%, 50% {
+        opacity: 0;
+    }
+    25%, 58.333% {
+        opacity: 1;
+    }
+}
+
+@keyframes animated-gradient-text_fade-foreground-2__P9mAq {
+    0%, 100% {
+        opacity: 0;
+    }
+    33.333%, 50% {
+        opacity: 1;
+    }
+
+    16.667%, 66.667% {
+        opacity: 0;
+    }
+}
+
+@keyframes animated-gradient-text_fade-background-3__VVOJd {
+    0%, 58.333%, 91.667%, 100% {
+        opacity: 1;
+    }
+    66.667%, 83.333% {
+        opacity: 0;
+    }
+}
+
+@keyframes animated-gradient-text_fade-foreground-3__eTWJh {
+    0%, 50%, 100% {
+        opacity: 0;
+    }
+    66.667%, 83.333% {
+        opacity: 1;
+    }
+}
+
+</style>
+
+</head>
+<body>
+
+    <div>
+        <h1 aria-label="Develop. Preview. Ship." class="hero_title__H3hra">
+            <span class="animate-text_bg animate-text_bg-1">
+                <span class="animate-text_front animate-text_front-1">Develop.</span>
+            </span>
+            <span class="animate-text_bg animate-text_bg-2">
+                <span class="animate-text_front animate-text_front-2">Preview.</span>
+            </span>
+            <span class="animate-text_bg animate-text_bg-3">
+                <span class="animate-text_front animate-text_front-3">Ship.</span>                    
+            </span>
+                
+        </h1>
+    </div>
+
+    
+</body>
+</html>
